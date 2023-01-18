@@ -36,3 +36,14 @@
     transform: rotate(360deg);
   }
 }
+
+.CategoryList {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.ProductList {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 1rem;
+}
