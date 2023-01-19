@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import data, { allCategories, productCount, namesAndCategories, categoriesWithCounts } from './data'
+import data, { allCategories, productCount, namesAndCategories, categoriesWithCounts, categoriesUnique } from './data'
 import './App.css';
 import Product from './components/Product';
 import CategoryButton from './components/CategoryButton';
