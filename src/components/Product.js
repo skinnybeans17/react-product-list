@@ -1,3 +1,5 @@
+import data from "../data"
+
 export default function Product(props) {
     return (
       <div>
