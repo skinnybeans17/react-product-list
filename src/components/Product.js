@@ -9,8 +9,9 @@ export default function Product({category}) {
           })
           .map((item) => (
           <div key={item.id} className="items-list">
-            <h1>{item.name}</h1>
-            <p>{item.category}</p>
+            <h2>{item.name}</h2>
+            <h5>{item.category}</h5>
+            <h6>{item.description}</h6>
             <p>{item.price}</p>
           </div>
         ))}

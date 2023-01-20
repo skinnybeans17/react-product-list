@@ -11,8 +11,8 @@ function App() {
       <header className="App-Header">
         <h1>Product List</h1>
       <main>
-        <Product category={category}/>
         <CategoryButton setCategory={setCategory}/>
+        <Product category={category}/>
       </main>
       </header>
     </div>
