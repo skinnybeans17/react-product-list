@@ -12,7 +12,7 @@ const categoriesWithCounts = allCategories.reduce((obj, cat) => {
         obj[cat.category] += 1
     }
     return obj
-  }, {})
+  }, {});
 
 const namesAndCategories = categoriesUnique.map(name => {
     return {

@@ -1,11 +1,19 @@
-import data from "../data"
+import data from "../data";
 
-export default function Product(props) {
+export default function Product({category}) {
     return (
-      <div>
-        <h1>{props.name}</h1>
-        <p>{props.name}</p>
-        <p>${props.price}</p>
+      <div className={'items'}>
+        {data
+          .filter((item) => {
+            return item.category === category || category === "All";
+          })
+          .map((item) => (
+          <div key={item.id} className="items-list">
+            <h1>{item.name}</h1>
+            <p>{item.category}</p>
+            <p>{item.price}</p>
+          </div>
+        ))}
       </div>
-    )
-  }
+    );
+}
